@@ -5,84 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gitanjali Kumari - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Gitanjali Kumari</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo">Gitanjali Kumari</h1>
+            <ul class="nav-links">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Full Stack Developer specializing in IoT and Intelligent Systems with experience in ReactJS, JavaScript, and backend technologies.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <h3>Programming Languages</h3>
-            <a href="#"><img src="icons/c.png" alt="C"></a>
-            <a href="#"><img src="icons/java.png" alt="Java"></a>
-            <a href="#"><img src="icons/html.png" alt="HTML"></a>
-            <a href="#"><img src="icons/javascript.png" alt="JavaScript"></a>
-            <a href="#"><img src="icons/python.png" alt="Python"></a>
-            <a href="#"><img src="icons/sql.png" alt="SQL"></a>
-            
-            <a href="#"><img src="icons/react.png" alt="ReactJS"></a>
-            <a href="#"><img src="icons/tailwind.png" alt="Tailwind CSS"></a>
-            
-            <a href="#"><img src="icons/mysql.png" alt="MySQL"></a>
-            <a href="#"><img src="icons/access.png" alt="MS Access"></a>
-            <a href="#"><img src="icons/excel.png" alt="MS Excel"></a>
-            
-            <a href="#"><img src="icons/figma.png" alt="Figma"></a>
-            <a href="#"><img src="icons/tableau.png" alt="Tableau"></a>
-            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Video Background -->
+    <!-- Hero Section with Video Background -->
+<section id="hero">
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+        <!-- Add your circular photo here -->
+        <img src="profile.jpeg" alt="Gitanjali Kumari" class="profile-photo">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Full Stack Developer | IoT Enthusiast | Innovator</p>
+        <a href="#summary" class="btn">Explore More</a>
+    </div>
+</section>
+    <section id="summary" class="section">
+        <div class="container">
+            <h2>Summary</h2>
+            <p>
+                Full Stack Developer and Co-Founder at Bindisa Agritech Pvt. Ltd., with a strong foundation in IoT, data analytics, and software development. Proficient in ReactJS, Javascript, Python, and cloud computing, with experience in sensor-based systems, real-time data processing, and scalable application development. Passionate about research and innovation, particularly in embedded systems, smart technologies, and data-driven decision-making.
+            </p>
         </div>
     </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Restaurant Food Ordering Website:</strong> Built a responsive website with payment gateway integration.</li>
-            <li><strong>Bus Ticket Booking System:</strong> Used Binary Search Tree for efficient seat management.</li>
-        </ul>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Manipal University Jaipur</strong> - Bachelor of Technology, Computer Science Engineering (2022-2026)<br>
+                    Specialization in Internet of Things and Intelligent Systems<br>
+                    Current GPA: 8.38/10
+                </li>
+                <li>
+                    <strong>Creane Memorial High School</strong> - Higher Secondary (12th Grade) (2020-2022)<br>
+                    Percentage: 83%
+                </li>
+                <li>
+                    <strong>G.D. Goenka Public School</strong> - Secondary (10th Grade) (2016-2020)<br>
+                    Percentage: 92.3%
+                </li>
+            </ul>
+        </div>
     </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <p><strong>Website Developer, Bal Jyoti Foundation</strong> (June 2023 - July 2023)</p>
-        <p>Developed and optimized a website for better user experience.</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming Languages</h3>
+                    <p>C, Java, HTML, JavaScript, Python, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Frameworks</h3>
+                    <p>ReactJS, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MySQL, MS Access, MS Excel</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools</h3>
+                    <p>Figma</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Red Hat Enterprise Linux Automation with Ansible (RH294)</li>
-            <li>Oracle Academy: Java Foundations</li>
-            <li>Database Management Systems - Coursera</li>
-        </ul>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bindisa Agritech Pvt. Ltd.</h3>
+                    <p><strong>Co-Founder</strong> | Feb 2025 - Present</p>
+                    <ul>
+                        <li>Developed a soil fertility testing device to optimize resource use and improve crop yield.</li>
+                        <li>Led R&D and product development for accurate and efficient soil analysis.</li>
+                        <li>Integrated IoT and smart sensors for real-time soil monitoring and data-driven farming.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bal Jyoti Foundation</h3>
+                    <p><strong>Website Developer</strong> | June 2023 - July 2023</p>
+                    <ul>
+                        <li>Developed and maintained the foundation's website, increasing online engagement by 35%.</li>
+                        <li>Implemented key features, including event updates, donation portals, and informational pages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gitanjalik678@gmail.com">gitanjalik678@gmail.com</a></p>
-        <p>Phone: +91 8825248506</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Restaurant Food Ordering Website</h3>
+                    <p>Developed a responsive website for seamless food ordering with real-time order management.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Bus Ticket Booking System</h3>
+                    <p>Built a ticket booking system using a Binary Search Tree (BST) for efficient seat management.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Goldman Sachs - Software Engineering Job Simulation (Forage, Feb 2025)</li>
+                <li>Design and Analysis of Algorithms (NPTEL, Oct 2024)</li>
+                <li>Red Hat Enterprise Linux Automation with Ansible (Red Hat, April 2024)</li>
+                <li>The Complete 2024 Web Development Bootcamp (Udemy, April 2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Gitanjali Kumari. All Rights Reserved.</p>
+        <div class="container">
+            <p>Contact: <a href="mailto:gitanjalik678@gmail.com">gitanjalik678@gmail.com</a> | +918825248506 | Bihar, India</p>
+            <div class="social-links">
+                <a target=_blank href="http://linkedin.com/in/gitanjali-kumari-maybe"><i class="fab fa-linkedin" ></i></a>
+                <a target=_blank href="https://github.com/GeetAtGit"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
