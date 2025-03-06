@@ -1,5 +1,8 @@
 ## Hi there 👋
 
+This is my portfolio.
+geetatgit.github.io
+
 <!--
 **GeetAtGit/GeetAtGit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
